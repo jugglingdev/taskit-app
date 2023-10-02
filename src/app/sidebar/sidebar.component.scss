@@ -1,0 +1,50 @@
+@import '../../variables.scss';
+
+:host {
+  max-width: 250px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+
+  border: 1px solid $secondary-color-light;
+
+  .logo {
+    margin-bottom: 42px;
+  }
+
+  .sidebar-header {
+    padding: 50px 20px 20px 20px;
+  }
+
+  .sidebar-footer {
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid $secondary-color-light;
+
+    .profile-info {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+    }
+
+    .profile-text {
+      font-size: 0.75rem;
+
+      .username {
+        margin-bottom: .25em;
+        color: $primary-color-dark;
+      }
+
+      .email {
+        color: $secondary-color-dark;
+      }
+    }
+  }
+}
