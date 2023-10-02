@@ -5,10 +5,10 @@
 
 <div class="sidebar-footer">
   <div class="profile-info">
-    <img src="../../assets/profile-image.jpg" alt="user profile image" class="profile-image" width="36px" height="36px">
+    <img [src]="user.profileImage" alt="user profile image" class="profile-image" width="36px" height="36px">
     <div class="profile-text">
-      <h3 class="username">Name</h3>
-      <p class="email">Email@email.com</p>
+      <h3 class="username">{{ user.name }}</h3>
+      <p class="email">{{ user.email }}</p>
     </div>
   </div>
   <img src="../../assets/share-icon.png" alt="share icon" class="share-icon" width="16px" height="15px">
